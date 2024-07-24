@@ -8,14 +8,14 @@ pipeline {
     environment {
         GIT_CREDENTIALS_ID = 'git-credentials-id'  // Utilisez l'ID des credentials ajoutés ici
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials'
-        DOCKER_IMAGE_NAME = 'omari87/test4'
+        DOCKER_IMAGE_NAME = 'omari87/cc'
         WAR_FILE_NAME = 'ABCtechnologies-1.0.war'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: "${GIT_CREDENTIALS_ID}", url: 'https://github.com/abdellahomari87/test4.git', branch: 'master'
+                git credentialsId: "${GIT_CREDENTIALS_ID}", url: 'https://github.com/abdellahomari87/abdellah-perdueproject.git', branch: 'master'
             }
         }
 
