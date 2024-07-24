@@ -6,8 +6,8 @@ pipeline {
     }
 
     environment {
-        GIT_CREDENTIALS_ID = 'git credential'  // Utilisez l'ID des credentials ajoutés ici
-        DOCKER_CREDENTIALS_ID = 'docherhub'
+        GIT_CREDENTIALS_ID = '48ee983d-2cfb-45fc-a794-097bd3e4cc65'  // Utilisez l'ID des credentials ajoutés ici
+        DOCKER_CREDENTIALS_ID = '80fdf092-79dc-4ea5-a06d-8c4749e241b2'
         DOCKER_IMAGE_NAME = 'omari87/cc'
         WAR_FILE_NAME = 'ABCtechnologies-1.0.war'
     }
